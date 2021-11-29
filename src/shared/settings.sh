@@ -3,7 +3,7 @@
 ### DEV ###
 
 repository_url="git@github.com:Scille/" 
-repositories="sief-back"
+repositories=(sief-back aef-portail-agent)
 
 ### PROD ###
 

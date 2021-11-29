@@ -1,3 +1,3 @@
 #! /bin/bash
 
-repositories_selected=""
+repositories_selected=(sief-back)
