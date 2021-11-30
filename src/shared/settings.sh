@@ -2,7 +2,7 @@
 
 ### DEV ###
 
-repository_url="git@github.com:Scille/" 
+repository_url="git@github.com:Alexandre-Dissaux/" 
 repositories=(sief-back aef-portail-agent)
 repositories_selected=(sief-back)
 
@@ -10,3 +10,4 @@ repositories_selected=(sief-back)
 
 # repository_url="git@github.com:Scille/" 
 # repositories="sief-back sief-front aef-portail-agent aef-portail-usager anef-ui-lib sianf-front-agents"
+# repositories_selected=()

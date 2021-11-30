@@ -1,11 +1,8 @@
 #! /bin/bash
-source src/menu/selectRepo.sh
-
-select_repo
 
 # Print the Menu
 show_main_menu() {
-    # clear
+    clear
     echo -e "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     echo "         Menu Principal"
     echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -23,9 +20,12 @@ read_options(){
     read choice
     case $choice in
       0) exit 0;;
-      1) forEachRepo freeze_qualif;;
+#      1) forEachRepo freeze_qualif;;
+      1) freeze_qualif "sief-back";;
       2) select_repo;;
       #*) echo -e "${RED}Error : The choice you have selected does not exist${STD}"
       *) exit 0
     esac
+    echo "Press any key to continue..."
+    read choice
 }

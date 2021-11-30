@@ -9,8 +9,7 @@ select_repo() {
     while [[ $valueSelected == +([0-9]) && $valueSelected -ge 0 && $valueSelected -le selectAll ]]; do
         clear
 
-        echo "value selected : $valueSelected"
-        echo "~~~~~~~~ Repository selection ~~~~~~~~"
+        echo "~~~~~~~~~~~~ Repository selection "~~~~~~~~~~~~
         show_repo_selected $selectAll
         read valueSelected
         if [[ $valueSelected -ge 0 && $valueSelected -le selectAll ]]; then
@@ -42,7 +41,7 @@ select_or_unselect() {
 
 
 show_repo_selected () {
-    echo "Indicated a number for select or unselect a repository or an other value to validate your choices"
+    echo "Indicated a number to select or unselect a repository or an other value to validate your choices"
     for i in "${!repositories[@]}"
     do
         echo "[$(show_indicator "${repositories[$i]}")] $i. "${repositories[$i]}""
