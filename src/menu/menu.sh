@@ -23,8 +23,8 @@ read_options(){
     read choice
     case $choice in
       0) exit 0;;
-      1) forEachRepo affiche_changelog_unreleased_sur_deploiement_qualif;;
-      2) forEachRepo mise_a_jour_qualif_avec_develop;;
+      1) forEachRepo freeze_qualif;;
+      2) select_repo;;
       #*) echo -e "${RED}Error : The choice you have selected does not exist${STD}"
       *) exit 0
     esac

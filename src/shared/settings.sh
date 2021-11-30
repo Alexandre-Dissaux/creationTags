@@ -4,6 +4,7 @@
 
 repository_url="git@github.com:Scille/" 
 repositories=(sief-back aef-portail-agent)
+repositories_selected=(sief-back)
 
 ### PROD ###
 

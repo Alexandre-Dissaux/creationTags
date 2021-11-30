@@ -16,6 +16,6 @@ getValueByIndex() {
     unset array[-1]
 
     for i in "${!array[@]}"; do
-        [[ "${i}" = "${index}" ]] && echo "${array[$i]}"
+        [[ $i = "${index}" ]] && echo "${array[$i]}"
     done
 }
